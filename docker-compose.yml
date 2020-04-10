@@ -6,6 +6,7 @@ services:
       context: ./docker/php
     volumes:
       - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+      - ./docker/php/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
       - ./:/var/www
 
   nginx:
