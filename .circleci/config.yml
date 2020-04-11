@@ -52,7 +52,6 @@ jobs:
       # run tests with phpunit or codecept
       - run: ./vendor/bin/phpunit
       # run phpcs tests
-      - run: ./vendor/bin/phpcbf --standard=PSR12 app
       - run: ./vendor/bin/phpcs  --standard=PSR12 app
-      - run: ./vendor/bin/phpcs  --stardard=PSR1 app
+      - run: ./vendor/bin/phpcs  --standard=PSR1 app
 
