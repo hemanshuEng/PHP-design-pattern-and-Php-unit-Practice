@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Patterns\Creational\AbstractFactory;
@@ -18,6 +19,6 @@ class UnixJsonWriter implements JsonWriter
         if ($formatted) {
             $options = JSON_PRETTY_PRINT;
         }
-        return json_encode($data,$options);
+        return json_encode($data, $options);
     }
 }
