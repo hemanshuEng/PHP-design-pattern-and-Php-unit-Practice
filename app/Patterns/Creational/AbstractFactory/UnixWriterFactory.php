@@ -6,6 +6,7 @@ namespace App\Patterns\Creational\AbstractFactory;
 
 /**
  * Class UnixWriterFactory
+ *
  * @package App\Patterns\Creational\AbstractFactory
  */
 class UnixWriterFactory implements WriterFactory

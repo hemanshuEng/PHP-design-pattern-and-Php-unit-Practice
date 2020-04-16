@@ -6,6 +6,7 @@ namespace App\Patterns\Creational\AbstractFactory;
 
 /**
  * Class UnixJsonWriter
+ *
  * @package App\Patterns\Creational\AbstractFactory
  */
 class UnixJsonWriter implements JsonWriter

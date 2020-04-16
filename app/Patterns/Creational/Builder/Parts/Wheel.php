@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+
 /**
  * Created by PhpStorm.
  * User: Hemanshu Khodiyar
@@ -7,8 +7,9 @@ declare(strict_types=1);
  * Time: 13:36
  */
 
-namespace App\Patterns\Creational\Builder\Parts;
+declare(strict_types=1);
 
+namespace App\Patterns\Creational\Builder\Parts;
 
 class Wheel
 {

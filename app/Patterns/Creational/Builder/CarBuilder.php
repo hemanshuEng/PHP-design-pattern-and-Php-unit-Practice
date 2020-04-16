@@ -1,13 +1,14 @@
 <?php
-declare(strict_types=1);
+
 /**
  * User: Hemanshu Khodiyar
  * Date: 16/04/2020
  * Time: 15:57
  */
 
-namespace App\Patterns\Creational\Builder;
+declare(strict_types=1);
 
+namespace App\Patterns\Creational\Builder;
 
 use App\Patterns\Creational\Builder\Parts\Car;
 use App\Patterns\Creational\Builder\Parts\Door;

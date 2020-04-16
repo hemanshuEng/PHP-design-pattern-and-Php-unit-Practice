@@ -7,7 +7,7 @@ namespace App\Patterns\Creational\AbstractFactory;
 interface CsvWriter
 {
     /**
-     * @param array $line
+     * @param  array $line
      * @return string
      */
     public function write(array $line): string;
