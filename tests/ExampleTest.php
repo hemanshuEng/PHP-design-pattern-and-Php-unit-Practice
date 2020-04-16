@@ -14,8 +14,6 @@ class ExampleTest extends TestCase
     {
         $this->get('/');
 
-        $this->assertEquals(
-            'Hello', 'Hello'
-        );
+        $this->assertEquals('Hello', 'Hello');
     }
 }
