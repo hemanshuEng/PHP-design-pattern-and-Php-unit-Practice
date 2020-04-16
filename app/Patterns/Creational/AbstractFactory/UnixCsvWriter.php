@@ -6,6 +6,7 @@ namespace App\Patterns\Creational\AbstractFactory;
 
 /**
  * Class UnixCsvWriter
+ *
  * @package App\Patterns\Creational\AbstractFactory
  */
 class UnixCsvWriter implements CsvWriter
