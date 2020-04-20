@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace App\Patterns\Structural\Decorator;
 
-class BookingDecorator  implements Booking
+class BookingDecorator implements Booking
 {
     protected Booking $booking;
 
