@@ -32,4 +32,45 @@ class IteratorTest extends TestCase
             $books
         );
     }
+    public function testCanIterateOverBookListAfterRemovingBook()
+    {
+        $book = new Book('Clean Code', 'Robert C. Martin');
+        $book2 = new Book('Professional Php Design Patterns', 'Aaron Saray');
+
+        $bookList = new BookList();
+        $bookList->addBook($book);
+        $bookList->addBook($book2);
+        $bookList->removeBook($book);
+
+        $books = [];
+        foreach ($bookList as $book) {
+            $books[] = $book->getAuthorAndTitle();
+        }
+
+        $this->assertSame(
+            ['Professional Php Design Patterns by Aaron Saray'],
+            $books
+        );
+    }
+
+    public function testCanAddBookToList()
+    {
+        $book = new Book('Clean Code', 'Robert C. Martin');
+
+        $bookList = new BookList();
+        $bookList->addBook($book);
+
+        $this->assertCount(1, $bookList);
+    }
+
+    public function testCanRemoveBookFromList()
+    {
+        $book = new Book('Clean Code', 'Robert C. Martin');
+
+        $bookList = new BookList();
+        $bookList->addBook($book);
+        $bookList->removeBook($book);
+
+        $this->assertCount(0, $bookList);
+    }
 }
