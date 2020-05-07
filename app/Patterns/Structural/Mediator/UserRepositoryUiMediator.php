@@ -29,6 +29,6 @@ class UserRepositoryUiMediator implements Mediator
     }
     public function getUser(string $username): string
     {
-      return  $this->userRepository->getUserName($username);
+        return  $this->userRepository->getUserName($username);
     }
 }
