@@ -37,7 +37,7 @@ class State
     private static function ensureIsValidState(string $state)
     {
         if (!in_array($state, self::$validStates)) {
-           throw new InvalidArgumentException('Invalid State Given');
+            throw new InvalidArgumentException('Invalid State Given');
         }
     }
     public function __toString()
