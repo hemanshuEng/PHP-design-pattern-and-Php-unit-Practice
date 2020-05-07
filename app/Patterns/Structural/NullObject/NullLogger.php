@@ -12,9 +12,7 @@ namespace App\Patterns\Structural\NullObject;
 
 class NullLogger implements Logger
 {
-
     public function log(string $str)
     {
-
     }
 }

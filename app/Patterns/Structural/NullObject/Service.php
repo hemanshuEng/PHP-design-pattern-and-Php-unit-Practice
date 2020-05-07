@@ -10,10 +10,9 @@ declare(strict_types=1);
 
 namespace App\Patterns\Structural\NullObject;
 
-
 class Service
 {
-    private Logger $Logger;
+    private Logger $logger;
 
     public function __construct(Logger $logger)
     {
@@ -22,6 +21,6 @@ class Service
 
     public function doSomething()
     {
-        $this->logger->log('We are in '.__METHOD__);
+        $this->logger->log('We are in ' . __METHOD__);
     }
 }
